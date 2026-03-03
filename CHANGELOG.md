@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Given a version number MAJOR.MINOR.PATCH, where MAJOR in 0 means developer edition.
 - Date in format YYYY-MM-DD, in this file meets Gregorian calendar only.
 
+## [0.0.5] - [2026-03-03], Developer Release
+
+### Updated
+
+- CPL dependency to v1.7.1.
+- PDM dependency to v2.2.0.
+
 ## [0.0.4] - [2025-12-31], Developer Release
 
 ### Added
