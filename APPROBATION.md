@@ -1,4 +1,4 @@
-# Approbation Matrix / mov2gif
+# Approbation Matrix for mov2gif
 
 > Build System: macOS Monterey 12.7.6 / Xcode 14.2
 

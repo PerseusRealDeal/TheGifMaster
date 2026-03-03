@@ -1,13 +1,13 @@
 <div align="center">
 
 File Convertor
-==============
+==
 
 __from .mov to .gif__
 
 [![Actions Status](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml)
 [![Style](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml)
-[![Version](https://img.shields.io/badge/Version-0.0.4-green.svg)](/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-0.0.5-green.svg)](/CHANGELOG.md)
 [![License](http://img.shields.io/:License-Clear_BSD-blue.svg)](/LICENSE)
 
 [![Platforms](https://img.shields.io/badge/Platform-macOS%2010.13+-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
@@ -15,17 +15,17 @@ __from .mov to .gif__
 [![Swift](https://img.shields.io/badge/Swift-5-orange.svg)](https://docs.swift.org/swift-book/RevisionHistory/RevisionHistory.html)
 [![SDK](https://img.shields.io/badge/SDK-UIKit%20-blueviolet.svg)](https://developer.apple.com/documentation/uikit)
 
-[![ConsolePerseusLogger](http://img.shields.io/:ConsolePerseusLogger-1.7.0-green.svg)](https://github.com/perseusrealdeal/ConsolePerseusLogger.git)
-[![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-2.1.1-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode.git)
+[![ConsolePerseusLogger](http://img.shields.io/:ConsolePerseusLogger-1.7.1-green.svg)](https://github.com/perseusrealdeal/ConsolePerseusLogger.git)
+[![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-2.2.0-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode.git)
 
-[`A3 Environment`](/APPROBATION.md) • [`CHANGELOG`](/CHANGELOG.md)
+[`A3 Environment`](/APPROBATION.md) • [`CHANGELOG`](/CHANGELOG.md) • [`The Clear BSD License`](/LICENSE)
 
 </div>
 
 ---
 
 Contents
-========
+==
 
 * [Announcement](#Announcement)
     * [Our terms](#Our-terms)
@@ -49,42 +49,42 @@ Contents
 ---
 
 Announcement
-============
+==
 
 This is the great home-made macOS app project to accomplish `.mov to .gif file conversion` task.
 
-Our terms
----------
+Our Terms
+--
 
-[`CPL`](https://github.com/perseusrealdeal/ConsolePerseusLogger.git), `C`onsole `P`erseus `L`ogger.</br>
-[`PGK`](https://github.com/perseusrealdeal/PerseusGeoKit.git), `P`erseus `G`eo `K`it.</br>
-[`PDM`](https://github.com/perseusrealdeal/PerseusDarkMode.git), `P`erseus `D`ark `M`ode.</br>
-`P2P`, `P`erson-`to`-`P`erson.</br>
-[`A3`](https://docs.google.com/document/d/1K2jOeIknKRRpTEEIPKhxO2H_1eBTof5uTXxyOm5g6nQ), `A`pple `A`pps `A`pprobation.</br>
-[`T3`](https://github.com/perseusrealdeal/TheTechnologicalTree), `T`he `T`echnological `T`ree.
+| Acronym | Stands for                                                                                                |
+| :-----: | --------------------------------------------------------------------------------------------------------- |
+| CPL     | [Console_Perseus_Logger](https://github.com/perseusrealdeal/ConsolePerseusLogger.git)                     |
+| PDM     | [Perseus_Dark_Mode](https://github.com/perseusrealdeal/PerseusDarkMode.git)                               |
+| PGK     | [Perseus_Geo_Kit](https://github.com/perseusrealdeal/PerseusGeoKit.git)                                   |
+| A3      | [Apple_Apps_Approbation](https://docs.google.com/document/d/1K2jOeIknKRRpTEEIPKhxO2H_1eBTof5uTXxyOm5g6nQ) |
+| T3      | [The_Technological_Tree](https://github.com/perseusrealdeal/TheTechnologicalTree)                         |
+| P2P     | Person_to_Person                                                                                          |
 
 The why
--------
+--
 
 > The initial point of development process.
 
 Preview material
-----------------
+--
 
 > ADD: Screen shots or/and animated gif.
 
 Top features
-------------
+--
 
 > ADD: Business features. 
 
----
-
 - `Multilanguage:` English and Russian
-- `Dark Mode:` Light, Dark, System (auto)
+- `Dark Mode:` Light, Dark, Auto
 
 Requirements
-============
+==
 
 > [!NOTE]
 > The current app project is represented in source code only, it's a developer edition.
@@ -100,10 +100,10 @@ Requirements
 - Translations [EN](/Convertor/Configuration/Translations/Translation_en.plist), [RU](/Convertor/Configuration/Translations/Translation_ru.plist)
 
 First-party software
-====================
+==
 
 MIT
----
+--
 
 | Type     | Name                                                                                                      |
 | -------- | --------------------------------------------------------------------------------------------------------- |
@@ -112,14 +112,14 @@ MIT
 | Class    | [MessageLabel](https://gist.github.com/PerseusRealDeal/dbfed6e01ed80be084983738ba713654)                  |
 
 [Unlicense](https://unlicense.org)
-----------------------------------
+--
 
 | Type     | Name                                                                                                      |
 | -------- | --------------------------------------------------------------------------------------------------------- |
-| Class    | [WebLabel](/Convertor/FirstPartyCode/WebLabel.swift)                                           |
+| Class    | [WebLabel](/Convertor/FirstPartyCode/WebLabel.swift)                                                      |
 
 Third-party software
-====================
+==
 
 | Type   | Name                                                                                  | License                            |
 | ------ | ------------------------------------------------------------------------------------- | ---------------------------------- |
@@ -128,7 +128,7 @@ Third-party software
 | Action | [cirruslabs/swiftlint-action@v1](https://github.com/cirruslabs/swiftlint-action/)     | MIT                                |
 
 Gifts
-=====
+==
 
 - [CurrentSystemLanguageGift.swift](https://gist.github.com/perseusrealdeal/98b082b136d574dd1b5aa760036dac8b)
 - [JsonDataDictionaryGift.swift](https://gist.github.com/perseusrealdeal/918c25633122e64d51f363f00059f6f8)
@@ -137,7 +137,7 @@ Gifts
 - [LocalizedExpectationGift.swift](/PerseusTests/Configuration/LocalizedExpectationGift.swift)
 
 Account points 
-==============
+==
 
 - Explicit start point [main.swift](/Convertor/main.swift)
 - Explicit app delegate [TestingAppDelegate.swift](/PerseusTests/TestingAppDelegate.swift)
@@ -158,7 +158,7 @@ Account points
 - SwiftLint shell script as a build phase, SwiftLint preinstallation required
 
 License
-=======
+==
 
 __The Clear BSD License__, see [LICENSE](/LICENSE) for details.
 
@@ -166,10 +166,10 @@ Copyright `© 7534 Mikhail A. Zhigulin of Novosibirsk`<br/>
 Copyright `© 7534 PerseusRealDeal`
 
 - The year starts from the creation of the world according to a Slavic calendar.
-- September, the 1st of Slavic year. It means that "Sep 01, 2025" is the beginning of 7534.
+- September, the 1st of Slavic year. For instance, "Sep 01, 2025" is the beginning of 7534.
 
 Other required licenses details
--------------------------------
+--
 
 © Mikhail A. Zhigulin of Novosibirsk **for** ConsolePerseusLogger, PerseusDarkMode</br>
 © PerseusRealDeal **for** ConsolePerseusLogger, PerseusDarkMode</br>
@@ -177,15 +177,15 @@ Other required licenses details
 © GitHub **for** GitHub Action cirruslabs/swiftlint-action@v1</br>
 
 Credits
-=======
+==
 
 <table>
   <tr>
-      <td>Management</td>
+      <td>Balance and Control</td>
       <td>Mikhail Zhigulin</td>
   </tr>
   <tr>
-      <td>Source</td>
+      <td>Source Code</td>
       <td>Mikhail Zhigulin</td>
   </tr>
   <tr>
@@ -219,26 +219,26 @@ Credits
 - Git clients: [SmartGit](https://syntevo.com/) and [GitHub Desktop](https://github.com/apps/desktop)
 
 Contributing
-============
+==
 
 > [!NOTE]
 > The product is constructed in `P2P` relationship paradigm that means the only one single and the same face in the product team during all development process.
 
-But, `translations and bug reports are welcome`, create an issue and give details.
+`Translations and bug reports are welcome`, create an issue and give details.
 
 If you'd like `to see the app in your native language` consider [translation for EN](/Convertor/Configuration/Translations/Translation_en.plist) as a template, then prepare your translation in the same way and create an issue, EN and RU already done.
 
 Author
-======
+==
 
 <div align="center">
 
-`Mikhail Zhigulin`
+`© Mikhail A. Zhigulin of Novosibirsk`
 
 </div>
 
 Contact
--------
+--
 
 <div align="center">
 
