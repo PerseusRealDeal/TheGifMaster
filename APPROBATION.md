@@ -1,12 +1,22 @@
 # Approbation Matrix for mov2gif
 
-> Build System: macOS Monterey 12.7.6 / Xcode 14.2
+## Approbated Versions
 
-## macOS
+> This report is actual for the following product versions: 
+
+v0.1.0
+
+## Approbation Note
+
+> NOTE: To catch all log messages Mac Console should be started first then after a little while the logged app.
+
+> Compilation: macOS Monterey 12.7.6 / Xcode 14.2
+
+# macOS approbation result
 
 > Approbated capability: ...<br/>
 
-| macOS       | Version  | CPL | Details |
+| macOS       | Version  | Ok? | Details |
 | ----------- | -------- | --- | ------- |
 | High Sierra | 10.13.6  | ??  | -       |
 | Mojave      | 10.14.6  | ??  | -       |
@@ -17,9 +27,9 @@
 | Sonoma      | 14.7.4   | ??  | -       |
 | Sequoia     | 15.3.1   | ??  | -       |
 
-## A3 environment
+# A3 environment
 
-### List of available Apple machines
+## List of available Apple machines
 
 > Excluded: virtualization (e.g. VirtualBox) and hackintosh
 
@@ -28,7 +38,7 @@
 | Mac mini    | 16GB   | SATA 480GB, NVMe 256GB |
 | MacBook Pro | 8GB    | 256GB                  |
 
-### System configuration for A3 environment
+## System configuration for A3 environment
 
 | macOS       | Version | Machine     | Xcode  | OpenCore | Git Client     |
 | ----------- | ------- | ----------- | ------ | -------- | -------------- |

@@ -32,7 +32,7 @@
             <objects>
                 <viewController id="NdM-46-oIE" customClass="SelfieViewController" customModule="mov2gif" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Zo1-hM-qgJ">
-                        <rect key="frame" x="0.0" y="0.0" width="553" height="511"/>
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="510"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pTY-Tb-nnu">

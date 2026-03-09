@@ -1,14 +1,13 @@
 <div align="center">
 
-File Convertor
+The File Convertor
 ==
 
-__from .mov to .gif__
+__FROM .mov TO .gif FILE__
 
 [![Actions Status](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml)
 [![Style](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml)
-[![Version](https://img.shields.io/badge/Version-0.0.5-green.svg)](/CHANGELOG.md)
-[![License](http://img.shields.io/:License-Clear_BSD-blue.svg)](/LICENSE)
+[![Version](https://img.shields.io/badge/Version-0.1.0-green.svg)](/CHANGELOG.md)
 
 [![Platforms](https://img.shields.io/badge/Platform-macOS%2010.13+-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
 [![Xcode](https://img.shields.io/badge/Xcode-14.2+-red.svg)](https://en.wikipedia.org/wiki/Xcode)

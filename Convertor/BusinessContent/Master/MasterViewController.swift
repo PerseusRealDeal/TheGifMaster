@@ -114,7 +114,7 @@ extension MasterViewController: MasterViewDelegate {
             return "Product Name".localizedValue
         }
 
-        return "Product Name".localizedValue + " v\(ver)"
+        return "Product Name".localizedValue + " \(ver)"
     }
 }
 

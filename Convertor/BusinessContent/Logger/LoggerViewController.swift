@@ -78,6 +78,10 @@ class LoggerViewController: NSViewController {
         self.view.window?.close()
     }
 
+    @IBAction func buttonClearTapped(_ sender: NSButton) {
+        presenter?.forceClear()
+    }
+
     @IBAction func buttonTurnedTapped(_ sender: NSButton) {
         presenter?.forceTurned(sender.state == .on ? true : false)
     }
@@ -145,17 +149,25 @@ extension LoggerViewController: LoggerViewDelegate {
         if isHighSierra {
             view.window?.appearance = DarkModeAgent.DarkModeUserChoice == .on ?
             DARK_APPEARANCE_DEFAULT_IN_USE : LIGHT_APPEARANCE_DEFAULT_IN_USE
-        }
 
-        texViewMessages.textColor = DarkMode.style == .dark ? .perseusGreen : .perseusGray
+            texViewMessages.textColor = DarkMode.style == .light ? .darkGray : .white
+        } else {
+            texViewMessages.textColor = DarkMode.style == .light ? .darkGray : #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+        }
     }
 
     func localize() {
 
         log.message("[\(type(of: self))].\(#function)")
 
-        self.view.window?.title = "Button: Logger".localizedValue
-        buttonClose.title = "Button: Close".localizedValue
+        let title = "Button: Logger".localizedValue + " — " + "Product Name".localizedValue
+
+        let ver = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+        let version = ver == nil ? "" : " \(ver!)"
+
+        self.view.window?.title = title + version
+
+        // buttonClose.title = "Button: Close".localizedValue
     }
 }
 

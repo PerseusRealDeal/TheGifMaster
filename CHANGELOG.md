@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Given a version number MAJOR.MINOR.PATCH, where MAJOR in 0 means developer edition.
 - Date in format YYYY-MM-DD, in this file meets Gregorian calendar only.
 
+## [0.1.0] - [2026-??-??], The File Convertor
+
 ## [0.0.5] - [2026-03-03], Developer Release
 
 ### Updated

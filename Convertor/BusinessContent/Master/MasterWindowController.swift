@@ -66,6 +66,6 @@ class MasterWindowController: NSWindowController, NSWindowDelegate {
 
     func windowWillClose(_ notification: Notification) {
         log.message("[\(type(of: self))].\(#function)")
-        AppGlobals.quitTheApp()
+        // AppGlobals.quitTheApp()
     }
 }
