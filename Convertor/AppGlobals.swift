@@ -105,7 +105,7 @@ struct AppGlobals {
 func loadCPLProfile(_ name: String) -> (status: Bool, info: String) {
     if let path = Bundle.main.url(forResource: name, withExtension: "json") {
         if log.loadConfig(path) {
-            return (true, "Options successfully reseted.")
+            return (true, "Logging options successfully reseted.")
         } else {
             return (false, "Failed to reset options.")
         }

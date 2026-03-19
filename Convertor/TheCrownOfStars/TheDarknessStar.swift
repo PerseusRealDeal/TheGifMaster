@@ -175,7 +175,7 @@ public class DarkModeAgent {
 
     private static var instance = { DarkModeAgent() }()
     private init() {
-        // log.message("[\(type(of: self))].\(#function)", .info)
+        log.message("[\(type(of: self))].\(#function)", .notice)
 #if os(macOS)
         if #available(macOS 10.14, *) {
             DarkModeAgent.distributedNCenter.addObserver(
