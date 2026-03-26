@@ -45,6 +45,8 @@ import Cocoa
 
 class LoggerViewController: NSViewController {
 
+    private var isScrollingAuto = true
+
     // MARK: - Presenter
 
     var presenter: LoggerViewPresenter?
@@ -59,6 +61,7 @@ class LoggerViewController: NSViewController {
 
     // MARK: - Outlets
 
+    @IBOutlet private(set) weak var buttonAutoScroll: NSButton!
     @IBOutlet private(set) weak var buttonClose: NSButton!
 
     @IBOutlet private(set) weak var buttonTurned: NSButton!
@@ -74,6 +77,10 @@ class LoggerViewController: NSViewController {
     @IBOutlet private(set) weak var comboBoxLevel: NSComboBox!
 
     // MARK: - Actions
+
+    @IBAction func buttonAutoScrollTapped(_ sender: NSButton) {
+        isScrollingAuto = sender.state == .on ? true : false
+    }
 
     @IBAction func buttonCloseTapped(_ sender: Any) {
         self.view.window?.close()
@@ -129,7 +136,9 @@ extension LoggerViewController: LoggerViewDelegate {
     func reloadMessages() {
         DispatchQueue.main.async {
             self.texViewMessages.string = report.text
-            self.scrollViewMessages.documentView?.scrollToEndOfDocument(self)
+            if self.isScrollingAuto {
+                self.scrollViewMessages.documentView?.scrollToEndOfDocument(self)
+            }
         }
     }
 
