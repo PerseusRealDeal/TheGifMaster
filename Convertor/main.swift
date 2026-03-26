@@ -22,7 +22,7 @@ let report = PerseusLogger.Report()
 log.turned = .on
 
 log.customActionOnMessage = report.report(_:)
-log.message(loadCPLProfile("CPLConfig").info)
+log.message(loadCPLProfile("CPLConfig").info, .info)
 
 // MARK: - The start line
 
@@ -34,14 +34,14 @@ let app = NSApplication.shared
 let appPurpose = NSClassFromString("TestingAppDelegate") as? NSObject.Type
 let appDelegate = appPurpose?.init() ?? AppDelegate()
 
-Coordinator.start()
+ContentCoordinator.start()
 
 // MARK: - The app's run
 
 log.message("The app is about to run...", .info)
 
 app.setActivationPolicy(.regular)
-Coordinator.masterWindowToFront()
+ContentCoordinator.masterWindowToFront()
 
 app.delegate = appDelegate as? NSApplicationDelegate
 app.activate(ignoringOtherApps: true)

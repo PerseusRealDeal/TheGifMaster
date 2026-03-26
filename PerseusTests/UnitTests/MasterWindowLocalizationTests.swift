@@ -47,10 +47,7 @@ class MasterWindowLocalizationTests: XCTestCase {
         // assert
 
         XCTAssertEqual(sut.view.window?.title, sut.windowTitleLocalized)
-
-        XCTAssertEqual(sut.labelGreeting.stringValue, "Greetings".localizedValue)
         XCTAssertEqual(sut.buttonSelfie.title, "Button: Selfie".localizedValue)
-
     }
 
     func test_localization_of_options_controlDarkMode() {

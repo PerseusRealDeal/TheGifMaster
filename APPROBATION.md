@@ -4,7 +4,7 @@
 
 > This report is actual for the following product versions: 
 
-v0.1.0
+[0.?.?]()
 
 ## Approbation Note
 

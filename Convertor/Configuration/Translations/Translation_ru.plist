@@ -11,7 +11,7 @@
 	<key>/* Selfie Screen */</key>
 	<string></string>
 	<key>Title: Convertor</key>
-	<string>Проект — Конвертор mov2gif</string>
+	<string>Проект — Файл Конвертор</string>
 	<key>Label: The App Version</key>
 	<string>Выпуск</string>
 	<key>Button: The App Source Code</key>
@@ -27,7 +27,7 @@
 	<key>Label: Copyright Notice</key>
 	<string>Охраняется авторским правом © 7534 Михаил A. Жигулин из Новосибирска.</string>
 	<key>Label: Copyright Details</key>
-	<string>Летоисчесление ведется от Сотворения Мира в Звездном Храме в соответствии со славянским календарем в котором первый месяц сентябрь.</string>
+	<string>Летоисчесление ведется от Сотворения Мира в Звездном Храме в соответствии со славянским календарем в котором первый месяц сентябрь. Первое сентября 2025 года от Р.Х. начало 7534 года.</string>
 	<key>Label: Credits</key>
 	<string>Работы выполнены</string>
 	<key>Label: Balancing and Control</key>

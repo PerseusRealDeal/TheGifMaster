@@ -9,7 +9,7 @@
     "format"      : "short",
     "marks"       : true,
     "time"        : false,
-    "owner"       : true,
+    "owner"       : false,
     "directives"  : false,
     "debugIsInfo" : true
 }
