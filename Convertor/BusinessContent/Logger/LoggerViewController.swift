@@ -45,6 +45,8 @@ import Cocoa
 
 class LoggerViewController: NSViewController {
 
+    private var isScrollingAuto = true
+
     // MARK: - Presenter
 
     var presenter: LoggerViewPresenter?
@@ -59,6 +61,7 @@ class LoggerViewController: NSViewController {
 
     // MARK: - Outlets
 
+    @IBOutlet private(set) weak var buttonAutoScroll: NSButton!
     @IBOutlet private(set) weak var buttonClose: NSButton!
 
     @IBOutlet private(set) weak var buttonTurned: NSButton!
@@ -67,6 +70,7 @@ class LoggerViewController: NSViewController {
     @IBOutlet private(set) weak var buttonOwner: NSButton!
     @IBOutlet private(set) weak var buttonDirrectives: NSButton!
 
+    @IBOutlet private(set) weak var scrollViewMessages: NSScrollView!
     @IBOutlet private(set) weak var texViewMessages: NSTextView!
     @IBOutlet private(set) weak var segmentedControlOutput: NSSegmentedControl!
     @IBOutlet private(set) weak var comboBoxFormat: NSComboBox!
@@ -74,8 +78,16 @@ class LoggerViewController: NSViewController {
 
     // MARK: - Actions
 
+    @IBAction func buttonAutoScrollTapped(_ sender: NSButton) {
+        isScrollingAuto = sender.state == .on ? true : false
+    }
+
     @IBAction func buttonCloseTapped(_ sender: Any) {
         self.view.window?.close()
+    }
+
+    @IBAction func buttonClearTapped(_ sender: NSButton) {
+        presenter?.forceClear()
     }
 
     @IBAction func buttonTurnedTapped(_ sender: NSButton) {
@@ -122,7 +134,12 @@ extension LoggerViewController: LoggerViewDelegate {
     }
 
     func reloadMessages() {
-        texViewMessages.string = report.text
+        DispatchQueue.main.async {
+            self.texViewMessages.string = report.text
+            if self.isScrollingAuto {
+                self.scrollViewMessages.documentView?.scrollToEndOfDocument(self)
+            }
+        }
     }
 
     func clear() {
@@ -133,29 +150,38 @@ extension LoggerViewController: LoggerViewDelegate {
 
     func setupUI() {
         log.message("[\(type(of: self))].\(#function)")
-        // texViewMessages.backgroundColor = .clear
+        texViewMessages.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
 
     func makeUp() {
 
-        log.message("[\(type(of: self))].\(#function), DarkMode: \(DarkMode.style)")
+        log.message("[\(type(of: self))].\(#function) DarkMode: \(DarkMode.style)")
 
         // view.layer?.backgroundColor = NSColor.perseusBlue.cgColor
 
         if isHighSierra {
             view.window?.appearance = DarkModeAgent.DarkModeUserChoice == .on ?
             DARK_APPEARANCE_DEFAULT_IN_USE : LIGHT_APPEARANCE_DEFAULT_IN_USE
-        }
 
-        texViewMessages.textColor = DarkMode.style == .dark ? .perseusGreen : .perseusGray
+            texViewMessages.textColor = DarkMode.style == .light ? .darkGray : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        } else {
+            texViewMessages.textColor = DarkMode.style == .light ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) : #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+        }
     }
 
     func localize() {
 
         log.message("[\(type(of: self))].\(#function)")
 
-        self.view.window?.title = "Button: Logger".localizedValue
-        buttonClose.title = "Button: Close".localizedValue
+        // let title = "Button: Logger".localizedValue + " — " + "Product Name".localizedValue
+        let title = "Logging of the product"
+
+        let ver = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+        let version = ver == nil ? "" : " \(ver!)"
+
+        self.view.window?.title = title + version
+
+        // buttonClose.title = "Button: Close".localizedValue
     }
 }
 

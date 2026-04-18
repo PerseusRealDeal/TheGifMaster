@@ -16,7 +16,7 @@
 		2E67C6982ECCBF06006BF7EE /* SelfieViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67C6972ECCBF06006BF7EE /* SelfieViewPresenter.swift */; };
 		2E67C69A2ECCC04A006BF7EE /* MasterViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67C6992ECCC04A006BF7EE /* MasterViewPresenter.swift */; };
 		2EA428FD2F03BEA4006E0F8E /* WebLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA428FC2F03BEA4006E0F8E /* WebLabel.swift */; };
-		2EA428FF2F03EEFF006E0F8E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA428FE2F03EEFF006E0F8E /* Coordinator.swift */; };
+		2EA428FF2F03EEFF006E0F8E /* ContentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA428FE2F03EEFF006E0F8E /* ContentCoordinator.swift */; };
 		2EA5E4382ED19E9600757B3E /* SelfieWindowLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA5E4372ED19E9600757B3E /* SelfieWindowLocalizationTests.swift */; };
 		2EB8C76A2ED36FB500FA4C03 /* LoggerWindowController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8C7692ED36FB500FA4C03 /* LoggerWindowController.storyboard */; };
 		2EB8C76C2ED3708500FA4C03 /* LoggerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8C76B2ED3708500FA4C03 /* LoggerWindowController.swift */; };
@@ -79,7 +79,7 @@
 		2E67C6972ECCBF06006BF7EE /* SelfieViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieViewPresenter.swift; sourceTree = "<group>"; };
 		2E67C6992ECCC04A006BF7EE /* MasterViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewPresenter.swift; sourceTree = "<group>"; };
 		2EA428FC2F03BEA4006E0F8E /* WebLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLabel.swift; sourceTree = "<group>"; };
-		2EA428FE2F03EEFF006E0F8E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2EA428FE2F03EEFF006E0F8E /* ContentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCoordinator.swift; sourceTree = "<group>"; };
 		2EA5E4372ED19E9600757B3E /* SelfieWindowLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieWindowLocalizationTests.swift; sourceTree = "<group>"; };
 		2EAA4CB92DF2E14200E8E81A /* APPROBATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = APPROBATION.md; sourceTree = "<group>"; };
 		2EB587422C9FB16A00D7B55B /* TestPlanStarted.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlanStarted.xctestplan; sourceTree = "<group>"; };
@@ -271,7 +271,7 @@
 		4B14840429128E460013B76E /* BusinessContent */ = {
 			isa = PBXGroup;
 			children = (
-				2EA428FE2F03EEFF006E0F8E /* Coordinator.swift */,
+				2EA428FE2F03EEFF006E0F8E /* ContentCoordinator.swift */,
 				4BBE9063291290C5008F734D /* Master */,
 				4BFA5FD8298974FA00AC09F5 /* Selfie */,
 				2EB8C7642ED3644000FA4C03 /* Logger */,
@@ -353,9 +353,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B1483E02912892C0013B76E /* mov2gif */ = {
+		4B1483E02912892C0013B76E /* TheGifMaster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B1483FC2912892F0013B76E /* Build configuration list for PBXNativeTarget "mov2gif" */;
+			buildConfigurationList = 4B1483FC2912892F0013B76E /* Build configuration list for PBXNativeTarget "TheGifMaster" */;
 			buildPhases = (
 				4B1483DD2912892C0013B76E /* Sources */,
 				4B1483DE2912892C0013B76E /* Frameworks */,
@@ -366,7 +366,7 @@
 			);
 			dependencies = (
 			);
-			name = mov2gif;
+			name = TheGifMaster;
 			packageProductDependencies = (
 			);
 			productName = XcodeTemplateProject;
@@ -410,7 +410,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4B1483DC2912892C0013B76E /* Build configuration list for PBXProject "mov2gif" */;
+			buildConfigurationList = 4B1483DC2912892C0013B76E /* Build configuration list for PBXProject "TheGifMaster" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -426,7 +426,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B1483E02912892C0013B76E /* mov2gif */,
+				4B1483E02912892C0013B76E /* TheGifMaster */,
 				4B1483F22912892F0013B76E /* PerseusTests */,
 			);
 		};
@@ -511,7 +511,7 @@
 				2EBE0E8C2F5170FD001E5E9F /* TheDarknessStar.swift in Sources */,
 				2EB8C7702ED3721D00FA4C03 /* LoggerViewPresenter.swift in Sources */,
 				4B5921D02B6648BC00D312B9 /* JsonDataPrettyPrintedGift.swift in Sources */,
-				2EA428FF2F03EEFF006E0F8E /* Coordinator.swift in Sources */,
+				2EA428FF2F03EEFF006E0F8E /* ContentCoordinator.swift in Sources */,
 				4B1483E52912892C0013B76E /* AppDelegate.swift in Sources */,
 				2EC2942F2ECD9AEF00FC06F1 /* MVPPresenter.swift in Sources */,
 				2E1272222E33551800E74E62 /* TheLoggerStar.swift in Sources */,
@@ -540,7 +540,7 @@
 /* Begin PBXTargetDependency section */
 		4B1483F52912892F0013B76E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4B1483E02912892C0013B76E /* mov2gif */;
+			target = 4B1483E02912892C0013B76E /* TheGifMaster */;
 			targetProxy = 4B1483F42912892F0013B76E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -699,13 +699,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Convertor/Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.macos.mov2gif;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perseusrealdeal.thegifmaster;
 				PRODUCT_NAME = mov2gif;
 				SWIFT_VERSION = 5.0;
 			};
@@ -720,6 +721,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = Convertor/Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -727,7 +729,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.macos.mov2gif;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perseusrealdeal.thegifmaster;
 				PRODUCT_NAME = mov2gif;
 				SWIFT_VERSION = 5.0;
 			};
@@ -748,7 +750,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.PerseusTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perseusrealdeal.thegifmaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mov2gif.app/Contents/MacOS/mov2gif";
@@ -771,7 +773,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.perseus.PerseusTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perseusrealdeal.thegifmaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mov2gif.app/Contents/MacOS/mov2gif";
@@ -781,7 +783,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B1483DC2912892C0013B76E /* Build configuration list for PBXProject "mov2gif" */ = {
+		4B1483DC2912892C0013B76E /* Build configuration list for PBXProject "TheGifMaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B1483FA2912892F0013B76E /* Debug */,
@@ -790,7 +792,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B1483FC2912892F0013B76E /* Build configuration list for PBXNativeTarget "mov2gif" */ = {
+		4B1483FC2912892F0013B76E /* Build configuration list for PBXNativeTarget "TheGifMaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B1483FD2912892F0013B76E /* Debug */,

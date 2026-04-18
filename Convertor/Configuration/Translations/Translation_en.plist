@@ -11,7 +11,7 @@
 	<key>/* Selfie Screen */</key>
 	<string></string>
 	<key>Title: Convertor</key>
-	<string>Project — Convertor mov2gif</string>
+	<string>Project — The File Convertor</string>
 	<key>Label: The App Version</key>
 	<string>Version</string>
 	<key>Button: The App Source Code</key>
@@ -27,7 +27,7 @@
 	<key>Label: Copyright Notice</key>
 	<string>Copyright © 7534 Mikhail Zhigulin of Novosibirsk</string>
 	<key>Label: Copyright Details</key>
-	<string>The year starts from the creation of the world in the Star temple according to a Slavic calendar. September, the 1st of Slavic year.</string>
+	<string>The year starts from the creation of the world in the Star temple according to a Slavic calendar. September, the 1st of Slavic year. Sep 01, 2025 is the beginning of 7534</string>
 	<key>Label: Credits</key>
 	<string>Credits</string>
 	<key>Label: Balancing and Control</key>

@@ -1,14 +1,21 @@
+<div align="right">
+
+[`A3 Environment`](/APPROBATION.md) • [`CHANGELOG`](/CHANGELOG.md) • [`The Clear BSD License`](/LICENSE)
+
+</div>
+
 <div align="center">
 
-File Convertor
+The app's name
 ==
 
-__from .mov to .gif__
+__The Gif Master__
+
+Conversion from .mov to .gif
 
 [![Actions Status](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml)
 [![Style](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml)
-[![Version](https://img.shields.io/badge/Version-0.0.5-green.svg)](/CHANGELOG.md)
-[![License](http://img.shields.io/:License-Clear_BSD-blue.svg)](/LICENSE)
+[![Version](https://img.shields.io/badge/Version-0.0.6-green.svg)](/CHANGELOG.md)
 
 [![Platforms](https://img.shields.io/badge/Platform-macOS%2010.13+-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
 [![Xcode](https://img.shields.io/badge/Xcode-14.2+-red.svg)](https://en.wikipedia.org/wiki/Xcode)
@@ -17,8 +24,6 @@ __from .mov to .gif__
 
 [![ConsolePerseusLogger](http://img.shields.io/:ConsolePerseusLogger-1.7.1-green.svg)](https://github.com/perseusrealdeal/ConsolePerseusLogger.git)
 [![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-2.2.0-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode.git)
-
-[`A3 Environment`](/APPROBATION.md) • [`CHANGELOG`](/CHANGELOG.md) • [`The Clear BSD License`](/LICENSE)
 
 </div>
 
@@ -51,7 +56,7 @@ Contents
 Announcement
 ==
 
-This is the great home-made macOS app project to accomplish `.mov to .gif file conversion` task.
+> This is the great home-made macOS app project to accomplish `.mov to .gif file conversion` task.
 
 Our Terms
 --
@@ -81,7 +86,8 @@ Top features
 > ADD: Business features. 
 
 - `Multilanguage:` English and Russian
-- `Dark Mode:` Light, Dark, Auto
+- `Dark Mode:` Light, Dark, System (auto)
+- `Logging:` Viewing log messages. Managing CPL options
 
 Requirements
 ==
@@ -107,7 +113,7 @@ MIT
 
 | Type     | Name                                                                                                      |
 | -------- | --------------------------------------------------------------------------------------------------------- |
-| Package  | [ConsolePerseusLogger v1.7.0](https://github.com/perseusrealdeal/ConsolePerseusLogger/releases/tag/1.7.0) |
+| Package  | [ConsolePerseusLogger v1.7.1](https://github.com/perseusrealdeal/ConsolePerseusLogger/releases/tag/1.7.1) |
 | Package  | [PerseusDarkMode v2.1.1](https://github.com/perseusrealdeal/PerseusDarkMode/releases/tag/2.1.1)           |
 | Class    | [MessageLabel](https://gist.github.com/PerseusRealDeal/dbfed6e01ed80be084983738ba713654)                  |
 
@@ -171,8 +177,6 @@ Copyright `© 7534 PerseusRealDeal`
 Other required licenses details
 --
 
-© Mikhail A. Zhigulin of Novosibirsk **for** ConsolePerseusLogger, PerseusDarkMode</br>
-© PerseusRealDeal **for** ConsolePerseusLogger, PerseusDarkMode</br>
 © 2025 The SwiftLint Contributors **for** SwiftLint</br>
 © GitHub **for** GitHub Action cirruslabs/swiftlint-action@v1</br>
 
@@ -203,11 +207,11 @@ Credits
   </tr>
 -->
   <tr>
-      <td>Russian</td>
+      <td>English</td>
       <td>Mikhail Zhigulin</td>
   </tr>
   <tr>
-      <td>English</td>
+      <td>Russian</td>
       <td>Mikhail Zhigulin</td>
   </tr>
 </table>

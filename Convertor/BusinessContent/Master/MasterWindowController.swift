@@ -55,17 +55,17 @@ class MasterWindowController: NSWindowController, NSWindowDelegate {
     // MARK: - Actions
 
     @IBAction func showSelfieWindow(_ sender: NSMenuItem) {
-        Coordinator.shared.screenSelfie.showWindow(sender)
+        ContentCoordinator.shared.screenSelfie.showWindow(sender)
     }
 
     @IBAction func showLoggerWindow(_ sender: NSMenuItem) {
-        Coordinator.shared.screenLogger.showWindow(sender)
+        ContentCoordinator.shared.screenLogger.showWindow(sender)
     }
 
     // MARK: - NSWindowDelegate
 
     func windowWillClose(_ notification: Notification) {
         log.message("[\(type(of: self))].\(#function)")
-        AppGlobals.quitTheApp()
+        // AppGlobals.quitTheApp()
     }
 }

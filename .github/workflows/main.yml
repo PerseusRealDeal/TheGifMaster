@@ -19,7 +19,7 @@ jobs:
 #    - name: Select Xcode 16.2
 #      run: sudo xcode-select -s "/Applications/Xcode_16.2.app"
     - name: Show buildable schemes
-      run: xcodebuild -list -project ./mov2gif.xcodeproj
+      run: xcodebuild -list -project ./TheGifMaster.xcodeproj
     - uses: mxcl/xcodebuild@v3
       with:
         platform: macOS
@@ -40,7 +40,7 @@ jobs:
 #    - name: Select Xcode 16.2
 #      run: sudo xcode-select -s "/Applications/Xcode_16.2.app"
     - name: Show buildable schemes
-      run: xcodebuild -list -project ./mov2gif.xcodeproj
+      run: xcodebuild -list -project ./TheGifMaster.xcodeproj
     - uses: mxcl/xcodebuild@v3
       with:
         platform: macOS

@@ -2,14 +2,14 @@
     "subsystem"   : "Perseus",
     "category"    : "Lover",
     "turned"      : "off",
-    "level"       : 5,
-    "output"      : "standard",
+    "level"       : 4,
+    "output"      : "custom",
     "subsecond"   : "nanosecond",
     "tidnumber"   : "decimal",
     "format"      : "short",
     "marks"       : true,
     "time"        : false,
-    "owner"       : true,
+    "owner"       : false,
     "directives"  : false,
     "debugIsInfo" : true
 }

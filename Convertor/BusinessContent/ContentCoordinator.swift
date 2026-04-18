@@ -1,5 +1,5 @@
 //
-//  Coordinator.swift
+//  ContentCoordinator.swift
 //  mov2gif
 //
 //  Created by Mikhail Zhigulin in 7534 (30.12.2025.)
@@ -15,7 +15,7 @@
 
 import Foundation
 
-class Coordinator {
+class ContentCoordinator {
 
     // MARK: - Screens
 
@@ -33,18 +33,18 @@ class Coordinator {
 
     // MARK: - Singletone
 
-    static let shared = Coordinator()
+    static let shared = ContentCoordinator()
 
     // MARK: - Initialization
 
     init() {
-        log.message("[\(type(of: self))].\(#function)")
+        log.message("[\(type(of: self))].\(#function)", .notice)
     }
 
     // MARK: - Contract
 
     static func start() {
-        log.message("[\(type(of: self))].\(#function)")
+        log.message("[\(type(of: self))].\(#function)", .notice)
     }
 
     static func masterWindowToFront() {

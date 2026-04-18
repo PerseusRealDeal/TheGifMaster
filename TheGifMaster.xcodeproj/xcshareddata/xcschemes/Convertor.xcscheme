@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B1483E02912892C0013B76E"
                BuildableName = "mov2gif.app"
-               BlueprintName = "mov2gif"
-               ReferencedContainer = "container:mov2gif.xcodeproj">
+               BlueprintName = "TheGifMaster"
+               ReferencedContainer = "container:TheGifMaster.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,8 +32,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B1483E02912892C0013B76E"
             BuildableName = "mov2gif.app"
-            BlueprintName = "mov2gif"
-            ReferencedContainer = "container:mov2gif.xcodeproj">
+            BlueprintName = "TheGifMaster"
+            ReferencedContainer = "container:TheGifMaster.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <TestPlans>
@@ -50,7 +50,7 @@
                BlueprintIdentifier = "4B1483F22912892F0013B76E"
                BuildableName = "PerseusTests.xctest"
                BlueprintName = "PerseusTests"
-               ReferencedContainer = "container:mov2gif.xcodeproj">
+               ReferencedContainer = "container:TheGifMaster.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B1483E02912892C0013B76E"
             BuildableName = "mov2gif.app"
-            BlueprintName = "mov2gif"
-            ReferencedContainer = "container:mov2gif.xcodeproj">
+            BlueprintName = "TheGifMaster"
+            ReferencedContainer = "container:TheGifMaster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -95,8 +95,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B1483E02912892C0013B76E"
             BuildableName = "mov2gif.app"
-            BlueprintName = "mov2gif"
-            ReferencedContainer = "container:mov2gif.xcodeproj">
+            BlueprintName = "TheGifMaster"
+            ReferencedContainer = "container:TheGifMaster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

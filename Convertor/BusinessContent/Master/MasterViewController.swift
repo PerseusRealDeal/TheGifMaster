@@ -74,7 +74,7 @@ extension MasterViewController: MasterViewDelegate {
 
     func makeUp() {
 
-        log.message("[\(type(of: self))].\(#function), DarkMode: \(DarkMode.style)")
+        log.message("[\(type(of: self))].\(#function) DarkMode: \(DarkMode.style)")
 
         // view.layer?.backgroundColor = NSColor.perseusBlue.cgColor
 
@@ -114,7 +114,7 @@ extension MasterViewController: MasterViewDelegate {
             return "Product Name".localizedValue
         }
 
-        return "Product Name".localizedValue + " v\(ver)"
+        return "Product Name".localizedValue + " \(ver)"
     }
 }
 

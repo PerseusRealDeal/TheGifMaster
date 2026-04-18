@@ -17,7 +17,7 @@
 //  Copyright © 7530 - 7534 PerseusRealDeal
 //
 //  The year starts from the creation of the world according to a Slavic calendar.
-//  September, the 1st of Slavic year. It means that "Sep 01, 2025" is the beginning of 7534.
+//  September, the 1st of Slavic year. For instance, "Sep 01, 2025" is the beginning of 7534.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -67,21 +67,22 @@ public class MessageLabel: MyCustomLabel, PerseusDelegatedMessage {
     }
 
     public var messageTextColor: Color? = .perseusIndigo
+
     public var message: String = "" {
         didSet {
 
             // for now
-
+            DispatchQueue.main.async {
 #if os(iOS)
-            self.text = self.message
-            self.alpha = 1.0
+                self.text = self.message
+                self.alpha = 1.0
 #elseif os(macOS)
-            self.stringValue = self.message
-            self.alphaValue = 1.0
+
+                self.stringValue = self.message
+                self.alphaValue = 1.0
 #endif
-
-            self.textColor = messageTextColor ?? .labelPerseus
-
+                self.textColor = self.messageTextColor ?? .labelPerseus
+            }
             // for after now
 
             guard self.message != self.messageDefault else {
@@ -159,6 +160,12 @@ public class MessageLabel: MyCustomLabel, PerseusDelegatedMessage {
     private func configure() {
         theDarknessTrigger = DarkModeObserver { _ in
             self.textColor = .labelPerseus
+            if isHighSierra {
+                self.messageTextColor = .labelPerseus
+            }
+        }
+        if isHighSierra {
+            self.messageTextColor = .labelPerseus
         }
     }
 }
